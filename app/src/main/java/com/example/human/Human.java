@@ -2,7 +2,7 @@ package com.example.human;
 
 import android.util.Log;
 
-class Human extends Animal {
+class Human extends Animal implements Thinkable {
     //メンバ変数
     String hobby;
 
@@ -12,8 +12,10 @@ class Human extends Animal {
       this.age = age;
       hobby = "音楽";
     }
-    public void say() {
 
+    public void say() {
+        Log.d("javatest","私の名前は" + this.name + "です。");
+        Log.d("javatest","年は" + this.age + "歳です。");
     }
 
     @Override
